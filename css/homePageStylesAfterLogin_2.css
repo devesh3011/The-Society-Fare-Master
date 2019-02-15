@@ -1,0 +1,119 @@
+/*new Sub - Event Form */
+
+#newSubEventForm input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+#newSubEventForm button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#newSubEventForm button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+#newSubEventForm .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+#newSubEventForm .imgcontainer {
+    text-align: center;
+    margin: 48px 0 36px 0;
+    position: relative;
+}
+
+#newSubEventForm img.avatar {
+    width: 35%;
+    border-radius: 50%;
+}
+
+#newSubEventForm .container-fluid {
+    padding: 16px;
+}
+
+#newSubEventForm span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+#newSubEventForm .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+#newSubEventForm .modal-content {
+    background-color: #fefefe;
+    margin: -3% auto 15% auto; /* -5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+#newSubEventForm .close {
+    position: absolute;
+    right: 20px;
+    top: -25px;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#newSubEventForm .close:hover,
+#newSubEventForm .close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+#newSubEventForm .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    #newSubEventForm span.psw {
+       display: block;
+       float: none;
+    }
+    #newSubEventForm .cancelbtn {
+       width: 100%;
+    }
+}
